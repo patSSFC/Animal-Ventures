@@ -1,3 +1,9 @@
+#splash {
+  background-color: #4285F4; }
 
+header {
+  width: 100%; }
+  header * {
+    display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
