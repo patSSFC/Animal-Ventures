@@ -1,9 +1,49 @@
 $temp-bg-color-main: #4285F4;
 
-
+@mixin join-cta-button($bg-color, $width) {
+    .button {
+        width: $width;
+        background-color: $bg-color;
+        font-size: 100%;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 5px;
+    }
+}
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0 auto;
+}
 
 #splash {
     background-color: $temp-bg-color-main;
+    .main-header, .main-content {
+        display: inline-block;
+        margin: 50px 2% 0 2%;
+    }
+    .main-header {
+        width: 40%;
+        h1 {
+            font-size: 100%;
+            margin: 20px 0;
+        }
+        p {
+            margin: 40px 0;
+        }
+        @include join-cta-button(#f1c40f, 60%);
+    }
+    .main-content {
+        width: 51%;
+    }
+    #sponsors {
+        display: flex;
+        justify-content: space-around;
+        figure {
+            display: inline-block;
+        }
+    }
 }
 
 header {
@@ -12,6 +52,20 @@ header {
         display: inline-block;
     }
     .logo-wrap {
-        
+        width: 25%;
+    }
+    .nav-wrap {
+        width: 74%;
+        text-align: right;
+        #main-nav, .subscribe {
+            position: relative;
+            top: -20px;
+        }
+        #main-nav {
+            margin-right: 20px;
+            ul li {
+                margin: 0 10px;
+            }
+        }
     }
 }
