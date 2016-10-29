@@ -5,7 +5,9 @@ body {
 
 #splash {
   width: 100%;
-  background-image: url("../assets/background-images/Background banner.jpg"); }
+  background: url(../assets/background_images/Background_banner.jpg);
+  background-size: cover;
+  background-position: center; }
   #splash .main-header, #splash .main-content {
     display: inline-block;
     margin: 50px 2% 0 2%; }
@@ -34,11 +36,13 @@ body {
       display: inline-block; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  height: 60px; }
   header * {
     display: inline-block; }
   header .logo-wrap {
-    width: 25%; }
+    width: 25%;
+    height: 60px; }
   header .nav-wrap {
     width: 74%;
     text-align: right; }
