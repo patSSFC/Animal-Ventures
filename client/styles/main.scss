@@ -1,4 +1,4 @@
-$temp-bg-color-main: #4285F4;
+// $temp-bg-color-main: #4285F4;
 
 @mixin join-cta-button($bg-color, $width) {
     .button {
@@ -16,10 +16,13 @@ $temp-bg-color-main: #4285F4;
 body {
     font-family: 'Muli', sans-serif;
     margin: 0 auto;
+    width: 1360px;
 }
 
 #splash {
-    background-color: $temp-bg-color-main;
+    // background-color: $temp-bg-color-main;
+    width: 100%;
+    background-image: url("../assets/background-images/Background banner.jpg");
     .main-header, .main-content {
         display: inline-block;
         margin: 50px 2% 0 2%;
