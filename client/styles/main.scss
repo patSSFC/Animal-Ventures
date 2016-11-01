@@ -2,6 +2,8 @@ $temp-bg-color-main: #268480;
 $path-to-assets: "../assets";
 $main-font-size: 24px;
 $main-cta-color: #ffe103;
+$alt-cta-color: #68dbd6;
+$alt-text-color: #b5e9e7;
 
 @mixin join-cta-button($bg-color, $width, $font-size) {
     button {
@@ -13,7 +15,16 @@ $main-cta-color: #ffe103;
         padding: 10px 20px;
         border-style: none;
         border-radius: 5px;
+        font-family: inherit;
     }
+}
+
+body {
+    font-family: 'Muli', sans-serif !important;
+    /* margin: 0 auto;*/
+    background-color: $temp-bg-color-main;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .clearfix:after {
@@ -22,81 +33,32 @@ $main-cta-color: #ffe103;
     clear: both;
 }
 
-body {
-    font-family: 'Muli', sans-serif;
-    /* margin: 0 auto;*/
-    background-color: $temp-bg-color-main;
-    /* max-width: 1360px;*/
-    max-width: 1240px;
-    margin: 0 auto;
+.banner {
+    height: 80px;
+    text-align: center;
+    background-color: #747576;
+    h2 {
+        padding-top: 30px;
+        font-size: $main-font-size;
+    }
 }
 
-#splash {
-    width: 100%;
-    /* padding: 0 2%;*/
-    background: url(#{$path-to-assets}/background_images/Background_banner.jpg);
-    background-size: contain;
-    background-position: center;
-    main {
-        margin-bottom: 40px;
-    }
-    .main-header, .main-content {
-        display: inline-block;
-        margin: 50px 2% 0 2%;
-    }
-    .main-header {
-        width: 36%;
-        color: #eee;
-        vertical-align: top;
-        h1 {
-            font-size: $main-font-size * 1.625;
-            margin: 20px 0;
-            line-height: 1.3em;
-        }
-        p {
-            font-size: $main-font-size;
-            margin: 40px 0;
-        }
-        @include join-cta-button($main-cta-color, 60%, $main-font-size);
-    }
-    .main-content {
-        width: 55%;
-        font-size: $main-font-size;
-        color: $main-cta-color;
-        video {
-            border-radius: 5px;
-        }
-        h2 {
-            margin: 10px 0;
-        }
-        p {
-            font-size: $main-font-size * .5833333;
-            color: #eee;
-            margin-bottom: 10px;
-        }
-    }
-    #sponsors {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        height: 80px;
-        background-color: #f3f3f3;
-        opacity: .63;
-        figure {
-            display: inline-block;
-        }
-    }
+#header-wrap {
+    position: fixed;
+    // margin: 0 auto 30px auto;
+    top: 0;
+    // left: 0;
+    z-index: 1000;
 }
 
 header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    // position: fixed;
+    // z-index: 1000;
     width: 95%;
     height: 60px;
-    padding-top: 30px;
     padding: 30px 2% 0 2%;
     * {
         display: inline-block;
@@ -138,4 +100,115 @@ header {
             height: 23px;
         }
     }
+}
+
+#splash {
+    width: 100%;
+    /* padding: 0 2%;*/
+    background: url(#{$path-to-assets}/background_images/Background_banner.jpg);
+    background-size: contain;
+    background-position: center;
+    // margin-top: 40px;
+    main {
+        margin: 40px;
+    }
+    .main-header, .main-content {
+        display: inline-block;
+        margin: 50px 2% 0 2%;
+    }
+    .main-header {
+        width: 36%;
+        color: #eee;
+        vertical-align: top;
+        h1 {
+            font-size: $main-font-size * 1.625;
+            margin: 20px 0;
+            line-height: 1.3em;
+        }
+        p {
+            color: $alt-text-color;
+            font-size: $main-font-size;
+            margin: 40px 0;
+        }
+        @include join-cta-button($main-cta-color, 60%, $main-font-size);
+    }
+    .main-content {
+        width: 55%;
+        font-size: $main-font-size;
+        color: $main-cta-color;
+        video {
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        p {
+            font-size: $main-font-size * .5833333;
+            color: #eee;
+            margin-top: 15px;
+        }
+    }
+    #sponsors {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 80px;
+        background-color: #f3f3f3;
+        opacity: .63;
+        figure {
+            display: inline-block;
+        }
+    }
+}
+
+#services {
+    width: 100%;
+    background: url(#{$path-to-assets}/background_images/Background_services.jpg);
+    background-size: contain;
+    background-position: center;
+    font-size: $main-font-size;
+    padding-bottom: 80px;
+    h2 {
+        text-align: center;
+        padding-top: 80px;
+    }
+    #services-wrap {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto 0 auto;
+        padding: 0 20px;
+        .service-box {
+            width: 30%;
+            margin: 0 auto;
+            figure {
+                width: 60%;
+            }
+            p {
+                width: 75%;
+                height: 120px;
+                margin-top: 20px;
+            }
+            button {
+                position: relative;
+
+                width: 50%;
+                background-color: $alt-cta-color;
+                font-size: $main-font-size/2;
+                color: #eee;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-style: none;
+                border-radius: 5px;
+                font-family: inherit;
+            }
+        }
+    }
+}
+
+#media-section {
+    
 }

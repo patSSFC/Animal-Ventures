@@ -1,70 +1,27 @@
+body {
+  font-family: 'Muli', sans-serif !important;
+  /* margin: 0 auto;*/
+  background-color: #268480;
+  max-width: 1240px;
+  margin: 0 auto; }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-body {
-  font-family: 'Muli', sans-serif;
-  /* margin: 0 auto;*/
-  background-color: #268480;
-  /* max-width: 1360px;*/
-  max-width: 1240px;
-  margin: 0 auto; }
+.banner {
+  height: 80px;
+  text-align: center;
+  background-color: #747576; }
+  .banner h2 {
+    padding-top: 30px;
+    font-size: 24px; }
 
-#splash {
-  width: 100%;
-  /* padding: 0 2%;*/
-  background: url(../assets/background_images/Background_banner.jpg);
-  background-size: contain;
-  background-position: center; }
-  #splash main {
-    margin-bottom: 40px; }
-  #splash .main-header, #splash .main-content {
-    display: inline-block;
-    margin: 50px 2% 0 2%; }
-  #splash .main-header {
-    width: 36%;
-    color: #eee;
-    vertical-align: top; }
-    #splash .main-header h1 {
-      font-size: 39px;
-      margin: 20px 0;
-      line-height: 1.3em; }
-    #splash .main-header p {
-      font-size: 24px;
-      margin: 40px 0; }
-    #splash .main-header button {
-      width: 60%;
-      background-color: #ffe103;
-      font-size: 24px;
-      color: #000;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-style: none;
-      border-radius: 5px; }
-  #splash .main-content {
-    width: 55%;
-    font-size: 24px;
-    color: #ffe103; }
-    #splash .main-content video {
-      border-radius: 5px; }
-    #splash .main-content h2 {
-      margin: 10px 0; }
-    #splash .main-content p {
-      font-size: 14px;
-      color: #eee;
-      margin-bottom: 10px; }
-  #splash #sponsors {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    height: 80px;
-    background-color: #f3f3f3;
-    opacity: .63; }
-    #splash #sponsors figure {
-      display: inline-block; }
+#header-wrap {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
 
 header {
   display: -webkit-box;
@@ -72,7 +29,6 @@ header {
   display: flex;
   width: 95%;
   height: 60px;
-  padding-top: 30px;
   padding: 30px 2% 0 2%; }
   header * {
     display: inline-block; }
@@ -106,5 +62,100 @@ header {
       border-style: none;
       vertical-align: middle;
       height: 23px; }
+
+#splash {
+  width: 100%;
+  /* padding: 0 2%;*/
+  background: url(../assets/background_images/Background_banner.jpg);
+  background-size: contain;
+  background-position: center; }
+  #splash main {
+    margin: 40px; }
+  #splash .main-header, #splash .main-content {
+    display: inline-block;
+    margin: 50px 2% 0 2%; }
+  #splash .main-header {
+    width: 36%;
+    color: #eee;
+    vertical-align: top; }
+    #splash .main-header h1 {
+      font-size: 39px;
+      margin: 20px 0;
+      line-height: 1.3em; }
+    #splash .main-header p {
+      color: #b5e9e7;
+      font-size: 24px;
+      margin: 40px 0; }
+    #splash .main-header button {
+      width: 60%;
+      background-color: #ffe103;
+      font-size: 24px;
+      color: #000;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-style: none;
+      border-radius: 5px;
+      font-family: inherit; }
+  #splash .main-content {
+    width: 55%;
+    font-size: 24px;
+    color: #ffe103; }
+    #splash .main-content video {
+      border-radius: 5px; }
+    #splash .main-content h2 {
+      margin-top: 10px; }
+    #splash .main-content p {
+      font-size: 14px;
+      color: #eee;
+      margin-top: 15px; }
+  #splash #sponsors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #f3f3f3;
+    opacity: .63; }
+    #splash #sponsors figure {
+      display: inline-block; }
+
+#services {
+  width: 100%;
+  background: url(../assets/background_images/Background_services.jpg);
+  background-size: contain;
+  background-position: center;
+  font-size: 24px;
+  padding-bottom: 80px; }
+  #services h2 {
+    text-align: center;
+    padding-top: 80px; }
+  #services #services-wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 0 auto;
+    padding: 0 20px; }
+    #services #services-wrap .service-box {
+      width: 30%;
+      margin: 0 auto; }
+      #services #services-wrap .service-box figure {
+        width: 60%; }
+      #services #services-wrap .service-box p {
+        width: 75%;
+        height: 120px;
+        margin-top: 20px; }
+      #services #services-wrap .service-box button {
+        position: relative;
+        width: 50%;
+        background-color: #68dbd6;
+        font-size: 12px;
+        color: #eee;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 5px;
+        font-family: inherit; }
 
 /*# sourceMappingURL=main.css.map */
