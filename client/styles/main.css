@@ -60,7 +60,9 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    height: 50px; }
+    height: 80px;
+    background-color: #f3f3f3;
+    opacity: .63; }
     #splash #sponsors figure {
       display: inline-block; }
 
