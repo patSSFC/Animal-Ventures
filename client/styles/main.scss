@@ -1,11 +1,13 @@
-// $temp-bg-color-main: #4285F4;
+$temp-bg-color-main: #268480;
 $path-to-assets: "../assets";
+$main-font-size: 24px;
+$main-cta-color: #ffe103;
 
-@mixin join-cta-button($bg-color, $width) {
-    .button {
+@mixin join-cta-button($bg-color, $width, $font-size) {
+    button {
         width: $width;
         background-color: $bg-color;
-        font-size: 100%;
+        font-size: $font-size;
         color: #000;
         text-decoration: none;
         padding: 10px 20px;
@@ -14,39 +16,72 @@ $path-to-assets: "../assets";
     }
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
     font-family: 'Muli', sans-serif;
+    /* margin: 0 auto;*/
+    background-color: $temp-bg-color-main;
+    /* max-width: 1360px;*/
+    max-width: 1240px;
     margin: 0 auto;
-    width: 1360px;
 }
 
 #splash {
-    // background-color: $temp-bg-color-main;
     width: 100%;
+    /* padding: 0 2%;*/
     background: url(#{$path-to-assets}/background_images/Background_banner.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    main {
+        margin-bottom: 40px;
+    }
     .main-header, .main-content {
         display: inline-block;
         margin: 50px 2% 0 2%;
     }
     .main-header {
-        width: 40%;
+        width: 36%;
+        color: #eee;
+        vertical-align: top;
         h1 {
-            font-size: 100%;
+            font-size: $main-font-size * 1.625;
             margin: 20px 0;
+            line-height: 1.3em;
         }
         p {
+            font-size: $main-font-size;
             margin: 40px 0;
         }
-        @include join-cta-button(#f1c40f, 60%);
+        @include join-cta-button($main-cta-color, 60%, $main-font-size);
     }
     .main-content {
-        width: 51%;
+        width: 55%;
+        font-size: $main-font-size;
+        color: $main-cta-color;
+        video {
+            border-radius: 5px;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        p {
+            font-size: $main-font-size * .5833333;
+            color: #eee;
+            margin-bottom: 10px;
+        }
     }
     #sponsors {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 50px;
         figure {
             display: inline-block;
         }
@@ -54,27 +89,51 @@ body {
 }
 
 header {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
     height: 60px;
+    padding-top: 30px;
+    padding: 30px 2% 0 2%;
     * {
         display: inline-block;
     }
     .logo-wrap {
-        width: 25%;
-        height: 60px;
+        float: left;
+        width: 17%;
     }
-    .nav-wrap {
-        width: 74%;
+    #main-nav {
+        float: left;
+        color: white;
+        margin-left: auto;
+        font-size: $main-font-size * .5833333;
         text-align: right;
-        #main-nav, .subscribe {
-            position: relative;
-            top: -20px;
+        position: relative;
+        top: 20px;
+        li {
+            margin: 0 10px;
         }
-        #main-nav {
-            margin-right: 20px;
-            ul li {
-                margin: 0 10px;
-            }
+    }
+    .subscribe-wrap {
+        margin-left: 13px;
+        float: left;
+        position: relative;
+        top: 15px;
+        .email-input, .subscribe-btn {
+            display: inline-block;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .email-input {
+            font-style: italic;
+            padding: 0 20px;
+        }
+        .subscribe-btn {
+            background-color: $main-cta-color;
+            border-style: none;
+            vertical-align: middle;
+            height: 23px;
         }
     }
 }
