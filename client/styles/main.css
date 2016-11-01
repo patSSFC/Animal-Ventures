@@ -158,4 +158,15 @@ header {
         border-radius: 5px;
         font-family: inherit; }
 
+#media-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  #media-section .title-card {
+    margin-right: -13px;
+    z-index: 1 !important; }
+  #media-section .media-contain {
+    width: 20%;
+    z-index: 0; }
+
 /*# sourceMappingURL=main.css.map */

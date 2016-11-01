@@ -194,7 +194,6 @@ header {
             }
             button {
                 position: relative;
-
                 width: 50%;
                 background-color: $alt-cta-color;
                 font-size: $main-font-size/2;
@@ -210,5 +209,15 @@ header {
 }
 
 #media-section {
-    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .title-card {
+        margin-right: -13px;
+        z-index: 1 !important;
+    }
+    .media-contain {
+        width: 20%;
+        z-index: 0;
+    }
 }
