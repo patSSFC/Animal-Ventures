@@ -6,6 +6,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
         <link rel="stylesheet" href="/styles/reset.css">
         <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     </head>
     <body>
         <div id="header-wrap">
@@ -116,7 +118,7 @@
                 <div class="media-contain">
                     <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/4759555/height/235/width/248/theme/standard-mini/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/no-cache/true/" height="236" width="251" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
                 </div>
-                <div class="media-contain">
+                <!-- <div class="media-contain">
                     <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/4759555/height/235/width/248/theme/standard-mini/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/no-cache/true/" height="236" width="251" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
                 </div>
                 <div class="media-contain">
@@ -138,8 +140,56 @@
                 </div>
                 <div class="media-contain">
                     <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/4759555/height/235/width/248/theme/standard-mini/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/no-cache/true/" height="236" width="251" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                </div> -->
+            </div>
+            <div id="sponsor-quotes" class="owl-carousel">
+                <div class="quote-contain">
+                    <figure>
+                        <img src="/assets/misc/eric-ries.png" alt="" />
+                    </figure>
+                    <div class="quote">
+                        <h3>A word from our parnters. Tom S is the bomb</h3>
+                        <blockquote>
+                            Tom Serres, Co-founder of Animal Ventures, is one of Silicon Valley's best
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="quote-contain">
+                    <figure>
+                        <img src="/assets/misc/eric-ries.png" alt="" />
+                    </figure>
+                    <div class="quote">
+                        <h3>A word from our parnters. Tom S is the bomb</h3>
+                        <blockquote>
+                            Tom Serres, Co-founder of Animal Ventures, is one of Silicon Valley's best
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="quote-contain">
+                    <figure>
+                        <img src="/assets/misc/eric-ries.png" alt="" />
+                    </figure>
+                    <div class="quote">
+                        <h3>A word from our parnters. Tom S is the bomb</h3>
+                        <blockquote>
+                            Tom Serres, Co-founder of Animal Ventures, is one of Silicon Valley's best
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="owlcarousel/owl.carousel.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    nav: true,
+                    center: true,
+                    items: 1,
+                    autoHeight: true
+                });
+            });
+        </script>
     </body>
 </html>

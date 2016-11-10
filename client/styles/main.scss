@@ -23,6 +23,14 @@ body {
     font-family: 'Muli', sans-serif !important;
     /* margin: 0 auto;*/
     background-color: $temp-bg-color-main;
+    // max-width: 1240px;
+    // margin: 0 auto;
+}
+
+#main-wrapper {
+    // font-family: 'Muli', sans-serif !important;
+    // /* margin: 0 auto;*/
+    // background-color: $temp-bg-color-main;
     max-width: 1240px;
     margin: 0 auto;
 }
@@ -49,6 +57,7 @@ body {
     top: 0;
     // left: 0;
     z-index: 1000;
+    background-color: black;
 }
 
 header {
@@ -57,7 +66,7 @@ header {
     display: flex;
     width: 95%;
     height: 60px;
-    padding: 30px 2% 0 2%;
+    padding: 15px 2% 0 2%;
     * {
         display: inline-block;
     }
@@ -220,5 +229,43 @@ header {
     .media-contain {
         // width: 20%;
         z-index: 0;
+    }
+}
+
+#sponsor-quotes {
+    margin-top: 60px;
+    .quote-contain {
+        figure {
+            float: left;
+            width: 50%;
+        }
+        .quote {
+            width: 50%;
+            margin-top: 30px;
+            float: left;
+            vertical-align: middle;
+            h3 {
+                font-size: $main-font-size;
+                color: white;
+                text-align: center;
+            }
+            blockquote {
+                width: 70%;
+                position: relative;
+                margin: 0 auto;
+                font-size: $main-font-size * 1.25;
+                margin-top: 80px;
+                text-align: center;
+                color: white;
+                &:before {
+                    position: absolute;
+                    content: "\201C";
+                    font-size: 400%;
+                    display: block;
+                    top: -60px;
+                    left: 186px;
+                }
+            }
+        }
     }
 }
