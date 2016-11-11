@@ -23,8 +23,9 @@ body {
 #header-wrap {
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
-  background-color: black; }
+  background-color: #268480; }
 
 header {
   display: -webkit-box;
@@ -88,7 +89,8 @@ header {
     #splash .main-header p {
       color: #b5e9e7;
       font-size: 24px;
-      margin: 40px 0; }
+      margin: 40px 0;
+      line-height: normal; }
     #splash .main-header button {
       width: 60%;
       background-color: #ffe103;
@@ -98,11 +100,39 @@ header {
       padding: 10px 20px;
       border-style: none;
       border-radius: 5px;
-      font-family: inherit; }
+      font-family: 'Muli'; }
+    #splash .main-header .blockchain-btn {
+      display: inline-block;
+      width: 59%;
+      margin-top: 10px;
+      padding: 10px 0px;
+      background-color: rgba(66, 166, 161, 0.5);
+      border: 2px solid #70DED8;
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      text-align: center; }
   #splash .main-content {
     width: 55%;
     font-size: 24px;
     color: #ffe103; }
+    #splash .main-content .blockchain-btn {
+      display: inline-block;
+      width: 100%;
+      background-color: #6AACA9;
+      color: #ffe103;
+      font-size: 24px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px 5px 0 0; }
+      #splash .main-content .blockchain-btn .sub-header {
+        color: white;
+        font-style: italic;
+        font-size: 18px; }
+      #splash .main-content .blockchain-btn span {
+        display: block;
+        padding-top: 5px; }
     #splash .main-content video {
       border-radius: 5px; }
     #splash .main-content h2 {
@@ -122,18 +152,21 @@ header {
     background-color: #f3f3f3;
     opacity: .63; }
     #splash #sponsors figure {
-      display: inline-block; }
+      display: inline-block;
+      width: 90%;
+      margin-top: 24px; }
 
 #services {
   width: 100%;
-  background: url(../assets/background_images/Background_services.jpg);
+  background: url(../assets/background_images/Background_services_1300x870.jpg);
   background-size: contain;
   background-position: center;
   font-size: 24px;
-  padding-bottom: 80px; }
+  padding-bottom: 40px; }
   #services h2 {
     text-align: center;
-    padding-top: 80px; }
+    padding-top: 40px;
+    color: #747576; }
   #services #services-wrap {
     width: 80%;
     display: flex;
@@ -169,7 +202,7 @@ header {
   #media-section .title-card {
     margin-right: -13px;
     z-index: 1 !important;
-    width: 20%;
+    width: 248px;
     height: 236px; }
   #media-section .media-contain {
     z-index: 0; }
@@ -203,5 +236,30 @@ header {
         display: block;
         top: -60px;
         left: 186px; }
+
+#cta-banner {
+  background-color: #eee;
+  padding-bottom: 60px; }
+  #cta-banner h1 {
+    width: 45%;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+    color: #747576;
+    font-size: 39px; }
+  #cta-banner button {
+    width: 30%;
+    background-color: #68dbd6;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Muli'; }
+  #cta-banner button {
+    display: block;
+    margin: 0 auto;
+    color: #eee; }
 
 /*# sourceMappingURL=main.css.map */
