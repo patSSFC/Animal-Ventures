@@ -17,6 +17,7 @@ body {
   text-align: center;
   background-color: #747576; }
   .banner h2 {
+    color: white;
     padding-top: 30px;
     font-size: 24px; }
 
@@ -175,7 +176,8 @@ header {
     padding: 0 20px; }
     #services #services-wrap .service-box {
       width: 30%;
-      margin: 0 auto; }
+      position: relative;
+      left: 60px; }
       #services #services-wrap .service-box figure {
         width: 60%; }
       #services #services-wrap .service-box p {
@@ -208,34 +210,36 @@ header {
     z-index: 0; }
 
 #sponsor-quotes {
-  margin-top: 60px; }
-  #sponsor-quotes .quote-contain figure {
-    float: left;
-    width: 50%; }
-  #sponsor-quotes .quote-contain .quote {
-    width: 50%;
-    margin-top: 30px;
-    float: left;
-    vertical-align: middle; }
-    #sponsor-quotes .quote-contain .quote h3 {
-      font-size: 24px;
-      color: white;
-      text-align: center; }
-    #sponsor-quotes .quote-contain .quote blockquote {
-      width: 70%;
-      position: relative;
-      margin: 0 auto;
-      font-size: 30px;
-      margin-top: 80px;
-      text-align: center;
-      color: white; }
-      #sponsor-quotes .quote-contain .quote blockquote:before {
-        position: absolute;
-        content: "\201C";
-        font-size: 400%;
-        display: block;
-        top: -60px;
-        left: 186px; }
+  padding-top: 60px;
+  background-color: #52b6b6; }
+  #sponsor-quotes .quote-contain {
+    display: flex;
+    justify-content: space-around; }
+    #sponsor-quotes .quote-contain figure {
+      width: 35%; }
+    #sponsor-quotes .quote-contain .quote {
+      width: 50%;
+      margin-top: 30px;
+      vertical-align: middle; }
+      #sponsor-quotes .quote-contain .quote h3 {
+        font-size: 24px;
+        color: white;
+        text-align: center; }
+      #sponsor-quotes .quote-contain .quote blockquote {
+        width: 70%;
+        position: relative;
+        margin: 0 auto;
+        font-size: 30px;
+        margin-top: 80px;
+        text-align: center;
+        color: white; }
+        #sponsor-quotes .quote-contain .quote blockquote:before {
+          position: absolute;
+          content: "\201C";
+          font-size: 400%;
+          display: block;
+          top: -60px;
+          left: 186px; }
 
 #cta-banner {
   background-color: #eee;

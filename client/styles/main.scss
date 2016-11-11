@@ -58,7 +58,9 @@ body {
     height: 80px;
     text-align: center;
     background-color: #747576;
+    // color: white;
     h2 {
+        color: white;
         padding-top: 30px;
         font-size: $main-font-size;
     }
@@ -239,7 +241,9 @@ header {
         padding: 0 20px;
         .service-box {
             width: 30%;
-            margin: 0 auto;
+            // margin: 0 auto;
+            position: relative;
+            left: 60px;
             figure {
                 width: 60%;
             }
@@ -282,16 +286,21 @@ header {
 }
 
 #sponsor-quotes {
-    margin-top: 60px;
+    padding-top: 60px;
+    background-color: #52b6b6;
     .quote-contain {
+        // width: 75%;
+        // margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
         figure {
-            float: left;
-            width: 50%;
+            // float: left;
+            width: 35%;
         }
         .quote {
             width: 50%;
             margin-top: 30px;
-            float: left;
+            // float: left;
             vertical-align: middle;
             h3 {
                 font-size: $main-font-size;
