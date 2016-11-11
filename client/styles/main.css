@@ -139,9 +139,9 @@ header {
     #splash .main-content h2 {
       margin-top: 10px; }
     #splash .main-content p {
-      font-size: 14px;
+      font-size: 15.99984px;
       color: #eee;
-      margin-top: 15px; }
+      margin-top: 10px; }
   #splash #sponsors {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -240,16 +240,25 @@ header {
           display: block;
           top: -60px;
           left: 186px; }
+      #sponsor-quotes .quote-contain .quote p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        margin-top: 30px;
+        font-style: italic; }
 
 #cta-banner {
   background-color: #eee;
-  padding-bottom: 60px; }
+  padding: 40px 0; }
   #cta-banner h1 {
     width: 45%;
     margin: 0 auto;
-    padding: 60px 0;
+    margin-bottom: 30px;
     text-align: center;
     color: #747576;
+    font-weight: 700;
     font-size: 39px; }
   #cta-banner button {
     width: 30%;
@@ -265,5 +274,46 @@ header {
     display: block;
     margin: 0 auto;
     color: #eee; }
+
+#main-footer {
+  background-color: #4e4f53;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+  font-size: 14px; }
+  #main-footer .content-wrap {
+    width: 40%;
+    margin: 0 auto; }
+    #main-footer .content-wrap h2 {
+      font-size: 24px;
+      color: white;
+      padding-top: 30px; }
+    #main-footer .content-wrap #social-list {
+      width: 50%;
+      margin: 30px auto 0 auto;
+      padding-bottom: 30px;
+      border-bottom: 1px solid grey;
+      display: flex;
+      justify-content: space-around; }
+      #main-footer .content-wrap #social-list li {
+        width: 15%; }
+    #main-footer .content-wrap #site-map {
+      width: 100%;
+      margin: 30px auto 0 auto;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.99999px;
+      color: white; }
+    #main-footer .content-wrap .message-button {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 0 15px 0;
+      border-radius: 5px;
+      margin-top: 30px;
+      background-color: #ffe103;
+      color: #4e4f53;
+      text-decoration: none;
+      font-size: 24px; }
 
 /*# sourceMappingURL=main.css.map */

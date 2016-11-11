@@ -19,19 +19,6 @@ $alt-text-color: #b5e9e7;
     }
 }
 
-// @mixin blockchain-btn {
-//     .blockchain-btn {
-//         display: inline-block;
-//         width: 100%;
-//         background-color: #6AACA9;
-//         color: $main-cta-color;
-//         font-size: $main-font-size;
-//         text-decoration: none;
-//         text-align: center;
-//         border-radius: 5px 5px 0 0;
-//     }
-// }
-
 body {
     font-family: 'Muli', sans-serif !important;
     /* margin: 0 auto;*/
@@ -198,9 +185,9 @@ header {
             margin-top: 10px;
         }
         p {
-            font-size: $main-font-size * .5833333;
+            font-size: $main-font-size * .66666;
             color: #eee;
-            margin-top: 15px;
+            margin-top: 10px;
         }
     }
     #sponsors {
@@ -324,19 +311,29 @@ header {
                     left: 186px;
                 }
             }
+            p {
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+                font-size: $main-font-size * .75;
+                margin-top: 30px;
+                font-style: italic;
+            }
         }
     }
 }
 
 #cta-banner {
     background-color: #eee;
-    padding-bottom: 60px;
+    padding: 40px 0;
     h1 {
         width: 45%;
         margin: 0 auto;
-        padding: 60px 0;
+        margin-bottom: 30px;
         text-align: center;
         color: #747576;
+        font-weight: 700;
         font-size: $main-font-size * 1.625;
     }
     @include join-cta-button($alt-cta-color, 30%, $main-font-size);
@@ -344,5 +341,54 @@ header {
         display: block;
         margin: 0 auto;
         color: #eee;
+    }
+}
+
+#main-footer {
+    background-color: #4e4f53;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    font-size: $main-font-size * .5833333;
+    .content-wrap {
+        width: 40%;
+        margin: 0 auto;
+        h2 {
+            font-size: $main-font-size;
+            color: white;
+            padding-top: 30px;
+        }
+        #social-list {
+            width: 50%;
+            margin: 30px auto 0 auto;
+            padding-bottom: 30px;
+            border-bottom: 1px solid grey;
+            display: flex;
+            justify-content: space-around;
+            li {
+                // display: inline-block;
+                width: 15%;
+            }
+        }
+        #site-map {
+            width: 100%;
+            margin: 30px auto 0 auto;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            font-size: $main-font-size * .583333;
+            color: white;
+        }
+        .message-button {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 0 15px 0;
+            border-radius: 5px;
+            margin-top: 30px;
+            background-color: $main-cta-color;
+            color: #4e4f53;
+            text-decoration: none;
+            font-size: $main-font-size;
+        }
     }
 }
