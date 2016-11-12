@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <script type="text/javascript">
+            !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+            analytics.load("V5Jwf2X3O94If6RUVskZbyM6922iCOIC");
+            analytics.page();
+            }}();
+        </script>
     </head>
     <body>
         <div id="header-wrap">
@@ -66,7 +72,7 @@
                             <img src="/assets/misc/services1_x2.png" alt="" />
                         </figure>
                         <p>
-                            Developing new ideas and taking them to Market
+                            Developing new ideas and taking them to market
                         </p>
                         <button type="button">Learn More</button>
                     </div>
@@ -84,7 +90,7 @@
                             <img src="/assets/misc/services3_x2.png" alt="" />
                         </figure>
                         <p>
-                            Research, Workshops, and Education for your teams
+                            Research, workshops, and education for your teams
                         </p>
                         <button type="button">Learn More</button>
                     </div>
@@ -102,7 +108,7 @@
                         <img src="/assets/misc/eric-ries2.png" alt="" />
                     </figure>
                     <div class="quote">
-                        <h3>Friends of Animal Ventures</h3>
+                        <h3>FRIENDS OF ANIMAL VENTURES</h3>
                         <blockquote>
                             Tom Serres, Co-founder of Animal Ventures, is one of Silicon Valley's best
                         </blockquote>
@@ -135,7 +141,7 @@
                             Bettina's talk about blockchain is one of the most insightful and clear explanations of this new technology that I've seen. The tech is abstract and exotic, but she makes it concrete and familiar. Most who see it, will get it.
                         </blockquote>
                         <p>
-                            Eric Ries, Founder of IMVU and Author of The Lean Startup
+                            Kevin Kelly, Founding Executive Editor of Wired Magazine and Author of The Inevitable
                         </p>
                     </div>
                 </div>
@@ -189,17 +195,24 @@
                     // loop: true,
                     center: true,
                     items: 1,
-                    autoHeight: true,
+                    // autoHeight: true,
                     dots: true
                 });
                 $(".subscribe-btn").on('click', function() {
-                    const email = $(".email-input").val().trim();
+                    const user_email = $(".email-input").val().trim();
                     let error = false;
-                    console.log(email);
-                    if (!email || email === "") {
+                    // console.log(email);
+                    if (!user_email || user_email === "") {
                         error = true;
+                    } else {
+                        analytics.identify({
+                            email: user_email
+                        });
+                        analytics.track("Header Email Collection", {
+                            email: user_email
+                        });
+                        console.log("done!");
                     }
-                    
                 });
             });
         </script>
