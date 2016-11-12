@@ -1,0 +1,13 @@
+body {
+  background-color: white; }
+
+#header-wrap {
+  background-color: white; }
+  #header-wrap header #main-nav {
+    color: #9A9A9A; }
+
+#splash {
+  background: url();
+  margin-top: 75px; }
+
+/*# sourceMappingURL=about.css.map */

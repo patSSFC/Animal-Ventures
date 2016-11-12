@@ -4,13 +4,17 @@ body {
   background-color: #268480; }
 
 #main-wrapper {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto; }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
+
+a {
+  text-decoration: none; }
 
 .banner {
   height: 80px;
@@ -24,49 +28,54 @@ body {
 #header-wrap {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: #268480; }
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 95%;
-  height: 60px;
-  padding: 15px 2% 0 2%; }
-  header * {
-    display: inline-block; }
-  header .logo-wrap {
-    float: left;
-    width: 17%; }
-  header #main-nav {
-    float: left;
-    color: white;
-    margin-left: auto;
-    font-size: 14px;
-    text-align: right;
-    position: relative;
-    top: 20px; }
-    header #main-nav li {
-      margin: 0 10px; }
-  header .subscribe-wrap {
-    margin-left: 13px;
-    float: left;
-    position: relative;
-    top: 15px; }
-    header .subscribe-wrap .email-input, header .subscribe-wrap .subscribe-btn {
-      display: inline-block;
-      height: 20px;
-      border-radius: 5px; }
-    header .subscribe-wrap .email-input {
-      font-style: italic;
-      padding: 0 20px; }
-    header .subscribe-wrap .subscribe-btn {
-      background-color: #ffe103;
-      border-style: none;
-      vertical-align: middle;
-      height: 23px; }
+  #header-wrap header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    height: 60px;
+    padding: 15px 2% 0 2%; }
+    #header-wrap header * {
+      display: inline-block; }
+    #header-wrap header .logo-wrap {
+      float: left;
+      width: 17%; }
+    #header-wrap header #main-nav {
+      float: left;
+      color: white;
+      margin-left: auto;
+      font-size: 14px;
+      text-align: right;
+      position: relative;
+      top: 20px; }
+      #header-wrap header #main-nav li {
+        margin: 0 10px; }
+    #header-wrap header .subscribe-wrap {
+      margin-left: 13px;
+      float: left;
+      position: relative;
+      top: 15px; }
+      #header-wrap header .subscribe-wrap .email-input, #header-wrap header .subscribe-wrap .subscribe-btn {
+        display: inline-block;
+        border-radius: 5px;
+        vertical-align: middle; }
+      #header-wrap header .subscribe-wrap .email-input {
+        font-style: italic;
+        padding: 0 20px;
+        height: 23px;
+        border: 1px solid #9A9A9A;
+        width: 50%; }
+      #header-wrap header .subscribe-wrap .subscribe-btn {
+        background-color: #ffe103;
+        border-style: none;
+        font-weight: 700;
+        vertical-align: middle;
+        width: 30%;
+        height: 24px; }
 
 #splash {
   width: 100%;
@@ -229,7 +238,7 @@ header {
         width: 70%;
         position: relative;
         margin: 0 auto;
-        font-size: 30px;
+        font-size: 19.99999px;
         margin-top: 80px;
         text-align: center;
         color: white; }
@@ -245,13 +254,13 @@ header {
         margin: 0 auto;
         text-align: center;
         color: white;
-        font-size: 18px;
+        font-size: 13.99999px;
         margin-top: 30px;
         font-style: italic; }
 
 #cta-banner {
   background-color: #eee;
-  padding: 40px 0; }
+  padding: 63px 0 30px 0; }
   #cta-banner h1 {
     width: 45%;
     margin: 0 auto;

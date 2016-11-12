@@ -1,5 +1,5 @@
 $bg-color-main: #268480;
-$path-to-assets: "../assets";
+$path-to-assets: "../assets/background_images";
 $main-font-size: 24px;
 $main-cta-color: #ffe103;
 $alt-cta-color: #68dbd6;
@@ -32,7 +32,8 @@ body {
     // /* margin: 0 auto;*/
     // background-color: $temp-bg-color-main;
     // max-width: 1240px;
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
@@ -40,6 +41,10 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+a {
+    text-decoration: none;
 }
 
 .banner {
@@ -58,56 +63,61 @@ body {
     position: fixed;
     // margin: 0 auto 30px auto;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     background-color: $bg-color-main;
-}
-
-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 95%;
-    height: 60px;
-    padding: 15px 2% 0 2%;
-    * {
-        display: inline-block;
-    }
-    .logo-wrap {
-        float: left;
-        width: 17%;
-    }
-    #main-nav {
-        float: left;
-        color: white;
-        margin-left: auto;
-        font-size: $main-font-size * .5833333;
-        text-align: right;
-        position: relative;
-        top: 20px;
-        li {
-            margin: 0 10px;
-        }
-    }
-    .subscribe-wrap {
-        margin-left: 13px;
-        float: left;
-        position: relative;
-        top: 15px;
-        .email-input, .subscribe-btn {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 95%;
+        height: 60px;
+        padding: 15px 2% 0 2%;
+        * {
             display: inline-block;
-            height: 20px;
-            border-radius: 5px;
         }
-        .email-input {
-            font-style: italic;
-            padding: 0 20px;
+        .logo-wrap {
+            float: left;
+            width: 17%;
         }
-        .subscribe-btn {
-            background-color: $main-cta-color;
-            border-style: none;
-            vertical-align: middle;
-            height: 23px;
+        #main-nav {
+            float: left;
+            color: white;
+            margin-left: auto;
+            font-size: $main-font-size * .5833333;
+            text-align: right;
+            position: relative;
+            top: 20px;
+            li {
+                margin: 0 10px;
+            }
+        }
+        .subscribe-wrap {
+            margin-left: 13px;
+            float: left;
+            position: relative;
+            top: 15px;
+            .email-input, .subscribe-btn {
+                display: inline-block;
+                border-radius: 5px;
+                vertical-align: middle;
+            }
+            .email-input {
+                font-style: italic;
+                padding: 0 20px;
+                height: 23px;
+                border: 1px solid #9A9A9A;
+                width: 50%;
+            }
+            .subscribe-btn {
+                background-color: $main-cta-color;
+                border-style: none;
+                font-weight: 700;
+                vertical-align: middle;
+                width: 30%;
+                height: 24px;
+            }
         }
     }
 }
@@ -115,7 +125,7 @@ header {
 #splash {
     width: 100%;
     /* padding: 0 2%;*/
-    background: url(#{$path-to-assets}/background_images/Background_banner.jpg);
+    background: url(#{$path-to-assets}/Background_banner.jpg);
     background-size: contain;
     background-position: center;
     // margin-top: 40px;
@@ -211,7 +221,7 @@ header {
 
 #services {
     width: 100%;
-    background: url(#{$path-to-assets}/background_images/Background_services_1300x870.jpg);
+    background: url(#{$path-to-assets}/Background_services_1300x870.jpg);
     background-size: contain;
     background-position: center;
     font-size: $main-font-size;
@@ -299,7 +309,7 @@ header {
                 width: 70%;
                 position: relative;
                 margin: 0 auto;
-                font-size: $main-font-size * 1.25;
+                font-size: $main-font-size * .833333;
                 margin-top: 80px;
                 text-align: center;
                 color: white;
@@ -317,7 +327,7 @@ header {
                 margin: 0 auto;
                 text-align: center;
                 color: white;
-                font-size: $main-font-size * .75;
+                font-size: $main-font-size * .583333;
                 margin-top: 30px;
                 font-style: italic;
             }
@@ -327,7 +337,8 @@ header {
 
 #cta-banner {
     background-color: #eee;
-    padding: 40px 0;
+    // padding: 40px 0;
+    padding: 63px 0 30px 0;
     h1 {
         width: 45%;
         margin: 0 auto;

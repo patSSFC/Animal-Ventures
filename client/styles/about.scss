@@ -1,0 +1,21 @@
+$main-bg-color : rgb(256,256,256);
+
+body {
+    background-color: $main-bg-color;
+}
+
+#header-wrap {
+    background-color: $main-bg-color;
+    header #main-nav {
+        color: #9A9A9A;
+    }
+}
+
+#splash {
+    background: url();
+
+    margin-top: 75px;
+    h1 {
+        // color: #385f88;
+    }
+}
