@@ -1,0 +1,61 @@
+$bg-color-main: #268480;
+$path-to-assets: "../assets/background_images";
+$main-font-size: 24px;
+$main-cta-color: #ffe103;
+$alt-cta-color: #68dbd6;
+$alt-text-color: #b5e9e7;
+@import "main.scss";
+
+@mixin bg-image ($image-url) {
+    background: url(#{$path-to-assets}/#{$image-url});
+    background-size: contain;
+    background-position: center;
+}
+
+#header-wrap {
+    background-color: white;
+    header #main-nav {
+        color: #9A9A9A;
+    }
+}
+
+section.service {
+    padding: 80px 5%;
+    color: white;
+    &.ventures {
+        @include bg-image("Background_banner.jpg");
+        padding-top: 160px;
+    }
+    &.media {
+        // background: url(#{$path-to-assets}/Background_banner.jpg);
+        // background-size: contain;
+        // background-position: center;
+        @include bg-image("services_AM_background.jpg");
+        background-size: cover;
+    }
+    &.labs {
+        color: black;
+        @include bg-image("Background_services_1300x870.jpg");
+        // background: url(#{$path-to-assets}/Background_services_1300x870.jpg);
+        // background-size: contain;
+        // background-position: center;
+        // margin-top: 75px;
+    }
+    figure {
+        width: 25%;
+    }
+    .service-copy {
+        // color: white;
+        width: 50%;
+        margin-top: 40px;
+        line-height: 1.3em;
+        letter-spacing: .1em;
+    }
+    @include join-cta-button($main-cta-color, 15%, $main-font-size/2);
+    button {
+        margin-top: 25px;
+    }
+    .download-primer button {
+        padding: 5px 10px;
+    }
+}
