@@ -1,4 +1,5 @@
 $main-bg-color : rgb(256,256,256);
+$main-font-size : 24px;
 
 body {
     background-color: $main-bg-color;
@@ -13,9 +14,93 @@ body {
 
 #splash {
     background: url();
-
     margin-top: 75px;
     h1 {
-        // color: #385f88;
+        padding: 120px 0 0 60px;
+        color: #385f88;
+        font-weight: 700;
+        font-size: $main-font-size * 1.625;
+        line-height: 1.3em;
+    }
+}
+
+#about {
+    margin-top: 40px;
+    color: #747576;
+    h2 {
+        text-align: center;
+        font-size: $main-font-size;
+    }
+    .copy-wrap {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        .copy {
+            width: 46%;
+            padding: 0 2%;
+            line-height: 1.3em;
+            letter-spacing: .1em;
+        }
+    }
+}
+
+#profiles {
+    padding: 40px;
+    background-color: #1f2f3f;
+    color: white;
+    h2 {
+        text-align: center;
+        font-size: $main-font-size;
+        margin-bottom: 40px;
+    }
+    .profile-wrap {
+        display: flex;
+        justify-content: space-between;
+        .profile#tom {
+            margin-left: 60px;
+            text-align: right;
+            margin-right: auto;
+        }
+        .profile#bettina {
+            margin-right: 60px;
+            margin-left: auto;
+            text-align: left;
+        }
+        .profile {
+            h3 {
+                font-size: $main-font-size;
+                margin-bottom: 10px;
+            }
+            ul {
+                margin-top: 20px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid grey;
+                li {
+                    margin-top: 15px;
+                    font-size: $main-font-size * .583333;
+                }
+            }
+            .social-wrap a {
+                width: 15%;
+                margin: 10px 5px;
+            }
+            &#bettina > .social-wrap {
+                display: flex;
+                justify-content: flex-start;
+            }
+            &#tom > .social-wrap {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+#sponsors {
+    padding: 40px 0;
+    h2 {
+        font-size: $main-font-size;
+        text-align: center;
     }
 }

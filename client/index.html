@@ -197,6 +197,7 @@
                     dots: true
                 });
                 mixpanel.identify();
+                mixpanel.track("Page Load");
                 $(".subscribe-btn").on('click', function() {
                     let user_email = $(".email-input").val().trim();
                     console.log("User email = " + user_email);

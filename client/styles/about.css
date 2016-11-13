@@ -9,5 +9,73 @@ body {
 #splash {
   background: url();
   margin-top: 75px; }
+  #splash h1 {
+    padding: 120px 0 0 60px;
+    color: #385f88;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 1.3em; }
+
+#about {
+  margin-top: 40px;
+  color: #747576; }
+  #about h2 {
+    text-align: center;
+    font-size: 24px; }
+  #about .copy-wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto; }
+    #about .copy-wrap .copy {
+      width: 46%;
+      padding: 0 2%;
+      line-height: 1.3em;
+      letter-spacing: .1em; }
+
+#profiles {
+  padding: 40px;
+  background-color: #1f2f3f;
+  color: white; }
+  #profiles h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px; }
+  #profiles .profile-wrap {
+    display: flex;
+    justify-content: space-between; }
+    #profiles .profile-wrap .profile#tom {
+      margin-left: 60px;
+      text-align: right;
+      margin-right: auto; }
+    #profiles .profile-wrap .profile#bettina {
+      margin-right: 60px;
+      margin-left: auto;
+      text-align: left; }
+    #profiles .profile-wrap .profile h3 {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    #profiles .profile-wrap .profile ul {
+      margin-top: 20px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid grey; }
+      #profiles .profile-wrap .profile ul li {
+        margin-top: 15px;
+        font-size: 13.99999px; }
+    #profiles .profile-wrap .profile .social-wrap a {
+      width: 15%;
+      margin: 10px 5px; }
+    #profiles .profile-wrap .profile#bettina > .social-wrap {
+      display: flex;
+      justify-content: flex-start; }
+    #profiles .profile-wrap .profile#tom > .social-wrap {
+      display: flex;
+      justify-content: flex-end; }
+
+#sponsors {
+  padding: 40px 0; }
+  #sponsors h2 {
+    font-size: 24px;
+    text-align: center; }
 
 /*# sourceMappingURL=about.css.map */
