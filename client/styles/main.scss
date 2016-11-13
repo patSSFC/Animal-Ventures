@@ -45,6 +45,13 @@ body {
 
 a {
     text-decoration: none;
+    &:active, &:visited, &:link {
+        color: inherit;
+        transition: color .2s;
+    }
+    &:hover {
+        color: $main-cta-color;
+    }
 }
 
 .banner {

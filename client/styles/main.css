@@ -15,6 +15,11 @@ body {
 
 a {
   text-decoration: none; }
+  a:active, a:visited, a:link {
+    color: inherit;
+    transition: color .2s; }
+  a:hover {
+    color: #ffe103; }
 
 .banner {
   height: 80px;

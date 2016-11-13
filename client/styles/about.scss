@@ -102,5 +102,15 @@ body {
     h2 {
         font-size: $main-font-size;
         text-align: center;
+        // margin-bottom: 20px;
+    }
+    figure {
+        margin: 40px auto 0 auto;
+    }
+    #banner_one {
+        width: 80%;
+    }
+    #banner_two {
+        width: 50%;
     }
 }

@@ -25,7 +25,7 @@
                 <nav id="main-nav">
                     <ul>
                         <li>Home</li>
-                        <li>About</li>
+                        <li><a href="#">About</a></li>
                         <li>Services</li>
                         <li>Pratice Areas</li>
                         <li>Animal Media</li>
@@ -87,7 +87,42 @@
             </div>
             <div id="sponsors">
                 <h2>OUR PARTNERS</h2>
+                <figure id="banner_one">
+                    <img src="/assets/logos/sponsor_logos/logos about page 1.png" alt="" />
+                </figure>
+                <figure id="banner_two">
+                    <img src="/assets/logos/sponsor_logos/logos about page 2.png" alt="" />
+                </figure>
             </div>
+            <footer id="main-footer">
+                <div class="content-wrap">
+                    <h2>GET IN TOUCH</h2>
+                    <a href="#" class="message-button">Send us a message</a>
+                    <ul id="social-list">
+                        <li><img src="assets/social-icons/facebook.png" alt="" /></li>
+                        <li><img src="assets/social-icons/linkedin.png" alt="" /></li>
+                        <li><img src="assets/social-icons/Twitter icon.png" alt="" /></li>
+                    </ul>
+                    <ul id="site-map">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Pratice Areas</li>
+                        <li>Animal Media</li>
+                        <!-- <li>Press</li> -->
+                        <li>Contact</li>
+                    </ul>
+                    <p>
+                        Copyright &copy; 2016 AnimalVentures. All Rights Reserved.
+                    </p>
+                </div>
+            </footer>
         </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                mixpanel.track("Page Load");
+            });
+        </script>
     </body>
 </html>

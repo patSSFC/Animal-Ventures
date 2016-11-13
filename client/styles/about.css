@@ -77,5 +77,11 @@ body {
   #sponsors h2 {
     font-size: 24px;
     text-align: center; }
+  #sponsors figure {
+    margin: 40px auto 0 auto; }
+  #sponsors #banner_one {
+    width: 80%; }
+  #sponsors #banner_two {
+    width: 50%; }
 
 /*# sourceMappingURL=about.css.map */
