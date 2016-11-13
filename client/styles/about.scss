@@ -1,5 +1,6 @@
 $main-bg-color : rgb(256,256,256);
 $main-font-size : 24px;
+$path-to-assets: "../assets/background_images";
 
 body {
     background-color: $main-bg-color;
@@ -13,10 +14,13 @@ body {
 }
 
 #splash {
-    background: url();
+    background: url(#{$path-to-assets}/background_about1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 494px;
     margin-top: 75px;
     h1 {
-        padding: 120px 0 0 60px;
+        padding: 170px 0 0 60px;
         color: #385f88;
         font-weight: 700;
         font-size: $main-font-size * 1.625;
@@ -47,7 +51,11 @@ body {
 
 #profiles {
     padding: 40px;
-    background-color: #1f2f3f;
+    background: url(#{$path-to-assets}/background_about2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 412px;
+    // background-color: #1f2f3f;
     color: white;
     h2 {
         text-align: center;

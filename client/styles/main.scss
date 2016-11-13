@@ -21,17 +21,10 @@ $alt-text-color: #b5e9e7;
 
 body {
     font-family: 'Muli', sans-serif !important;
-    /* margin: 0 auto;*/
     background-color: $bg-color-main;
-    // max-width: 1240px;
-    // margin: 0 auto;
 }
 
 #main-wrapper {
-    // font-family: 'Muli', sans-serif !important;
-    // /* margin: 0 auto;*/
-    // background-color: $temp-bg-color-main;
-    // max-width: 1240px;
     max-width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
@@ -41,6 +34,20 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.show {
+    display: block !important;
+}
+
+#error-wrap-cta {
+    display: none;
+    color: $main-cta-color;
 }
 
 a {
@@ -66,13 +73,17 @@ a {
     }
 }
 
+#main_cta_confirm, #header_confirm {
+    display: none;
+}
+
 #header-wrap {
     position: fixed;
     // margin: 0 auto 30px auto;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     background-color: $bg-color-main;
     header {
         display: -webkit-box;
@@ -116,6 +127,12 @@ a {
                 height: 23px;
                 border: 1px solid #9A9A9A;
                 width: 50%;
+                &:invalid {
+                    border: 1px solid red;
+                }
+                // &:valid {
+                //     border: 1px solid green;
+                // }
             }
             .subscribe-btn {
                 background-color: $main-cta-color;
@@ -124,6 +141,11 @@ a {
                 vertical-align: middle;
                 width: 30%;
                 height: 24px;
+            }
+            #error-wrap-head {
+                display: none;
+                color: $main-cta-color;
+                font-weight: 700;
             }
         }
     }

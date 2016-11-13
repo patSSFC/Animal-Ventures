@@ -7,10 +7,13 @@ body {
     color: #9A9A9A; }
 
 #splash {
-  background: url();
+  background: url(../assets/background_images/background_about1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 494px;
   margin-top: 75px; }
   #splash h1 {
-    padding: 120px 0 0 60px;
+    padding: 170px 0 0 60px;
     color: #385f88;
     font-weight: 700;
     font-size: 39px;
@@ -35,7 +38,10 @@ body {
 
 #profiles {
   padding: 40px;
-  background-color: #1f2f3f;
+  background: url(../assets/background_images/background_about2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 412px;
   color: white; }
   #profiles h2 {
     text-align: center;

@@ -1,6 +1,5 @@
 body {
   font-family: 'Muli', sans-serif !important;
-  /* margin: 0 auto;*/
   background-color: #268480; }
 
 #main-wrapper {
@@ -12,6 +11,17 @@ body {
   content: "";
   display: table;
   clear: both; }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
+.show {
+  display: block !important; }
+
+#error-wrap-cta {
+  display: none;
+  color: #ffe103; }
 
 a {
   text-decoration: none; }
@@ -30,12 +40,15 @@ a {
     padding-top: 30px;
     font-size: 24px; }
 
+#main_cta_confirm, #header_confirm {
+  display: none; }
+
 #header-wrap {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 2;
   background-color: #268480; }
   #header-wrap header {
     display: -webkit-box;
@@ -74,6 +87,8 @@ a {
         height: 23px;
         border: 1px solid #9A9A9A;
         width: 50%; }
+        #header-wrap header .subscribe-wrap .email-input:invalid {
+          border: 1px solid red; }
       #header-wrap header .subscribe-wrap .subscribe-btn {
         background-color: #ffe103;
         border-style: none;
@@ -81,6 +96,10 @@ a {
         vertical-align: middle;
         width: 30%;
         height: 24px; }
+      #header-wrap header .subscribe-wrap #error-wrap-head {
+        display: none;
+        color: #ffe103;
+        font-weight: 700; }
 
 #splash {
   width: 100%;
